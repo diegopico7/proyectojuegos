@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="juego2.css">
+</head>
+
+<body>
+
+  <body class="animator">
+    <nav>
+      <ul class="nav justify-content-end">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./ppt.html">Piedra Papel o tijera</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./juego3.html">La Pelotita</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Cuestionario</a>
+          </li>
+      </ul>
+    </nav>
+    
+    <header>
+      <h1>Pregunta y Respuestas</h1>
+      <p>Trivia de Programación
+      </p>
+    </header>
+
+    <div class="container">
+      <section id="p0">
+        <h3>1 - ¿Qué es HTML?</h3>
+        <label>
+          <input type="radio" value="1" name="p0" onclick="repuesta(0, this)">Editor de Código
+        </label>
+        <label>
+          <input type="radio" value="2" name="p0" onclick="repuesta(0, this)">Lenguaje de Programación
+        </label>
+        <label>
+          <input type="radio" value="3" name="p0" onclick="repuesta(0, this)">Lenguaje de Marcado
+        </label>
+      </section>
+      <section id="p1">
+        <h3>2 - Javascript</h3>
+        <label>
+          <input type="radio" value="1" name="p1" onclick="repuesta(1, this)">Lenguaje de Programación
+        </label>
+        <label>
+          <input type="radio" value="2" name="p1" onclick="repuesta(1, this)">Base de datos
+        </label>
+        <label>
+          <input type="radio" value="3" name="p1" onclick="repuesta(1, this)">Lo mismo que Java
+        </label>
+      </section>
+      <section id="p2">
+        <h3>3 - Para que sirve css3</h3>
+        <label>
+          <input type="radio" value="1" name="p2" onclick="repuesta(2, this)">Criptomonedas
+        </label>
+        <label>
+          <input type="radio" value="2" name="p2" onclick="repuesta(2, this)">Estilos en Cascada
+        </label>
+        <label>
+          <input type="radio" value="3" name="p2" onclick="repuesta(2, this)">Sistema Operativo
+        </label>
+      </section>
+      <section id="p3">
+        <h3>4 - Mejor curso Full Stack</h3>
+        <label>
+          <input type="radio" value="1" name="p3" onclick="repuesta(3, this)">Google
+        </label>
+        <label>
+          <input type="radio" value="2" name="p3" onclick="repuesta(3, this)">UTN Tucumán</label>
+        <label>
+          <input type="radio" value="3" name="p3" onclick="repuesta(3, this)">Microsoft
+        </label>
+      </section>
+      <section id="p4">
+        <h3>5 - Visual Estudio Code </h3>
+        <label>
+          <input type="radio" value="1" name="p4" onclick="repuesta(4, this)">Editor de Videos
+        </label>
+        <label>
+          <input type="radio" value="2" name="p4" onclick="repuesta(4, this)">Programa de Música
+        </label>
+        <label>
+          <input type="radio" value="3" name="p4" onclick="repuesta(4, this)">Editor de Codigo
+        </label>
+      </section>
+      <button onclick="corregir()">Corregir</button>
+      <br>
+      <h2 class="result">Cantidad acertadas: <span class="result respan" id="resultado"></span></h2>
+
+    </div>
+    <br><br><br> <br>
+    <footer>
+      <div class="foot-cont">
+          <section class="part1">
+              <article class="art1">
+              <ul>
+                  <li><b> Redes Sociales</b></li>
+                  <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+              </ul>
+              </article>
+              <article class="art2">
+              <ul>
+                  <li><b><img src="./img/joystick2.gif" alt="" width="70px" height="70px"></b></li>
+                  <li>Diego y Pamela</li>
+              </ul>
+              </article>
+              <article class="art3">
+              <ul>
+                  <li><a href="#">Inicio</a></li>                    
+                  <li><a href="./contacto.html">Contacto</a> </li>
+                  <li><a href="https://www.juegos.com/" target="_blank">Otros Juegos</a> </li>
+              </ul>
+              </article>
+          </section>
+      </div>
+  </footer>
+    <p class="copy">Copyright 2022</p>
+
+    <script src="juego2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
